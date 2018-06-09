@@ -1,10 +1,10 @@
 import axios from 'axios'
-import {apiDomain} from '@/config'
+import {domain} from '@/config'
 
 // axios.defaults.withCredentials = true
 
 const instance = axios.create({
-    baseURL: apiDomain
+    baseURL: domain.api
 })
 
 export default instance
